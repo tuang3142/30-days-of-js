@@ -43,15 +43,14 @@ print(type(types_1))
 
 #task 2 
 print('This is task 2 in level 3')
-num_1 = (int(input()), int(input()))
-num_2 = (input(), input())
+num_1 = int(input()), int(input())
+print(type(num_1))
+num_2 = int(input()), int(input())
 euclidian_distance = ((num_1[0] - num_2[0]) ** 2 + (num_1[1] - num_2[1]) ** 2) ** 0.5
 print(euclidian_distance)
 
 
 #THE END
-
-
 
 
 
