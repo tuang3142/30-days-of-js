@@ -9,9 +9,10 @@ new_list = ['I', 'fell', 'googley', 'coding', 'python']
 print(len(new_list))
 
 #task 4
-first_item, *middle_item, last_item = new_list
+first_item = new_list[0]
+middle_item = new_list[2]
+last_item = new_list[-1]
 print(first_item, middle_item, last_item)
-
 #task 5
 mixed_data_types = ['Dat', 17, 185, 'single', 'Viet Nam']
 
@@ -19,7 +20,9 @@ mixed_data_types = ['Dat', 17, 185, 'single', 'Viet Nam']
 it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', ' IBM', 'Oracle', 'Amazon']
 print(it_companies)
 print(len(it_companies))
-first_company, *middle_company, last_company = it_companies
+first_company = it_companies[0]
+middle_company = it_companies[4]
+last_company = it_companies[-1]
 print(first_company, middle_company, last_company)
 
 #task 10 
@@ -34,11 +37,12 @@ it_companies.insert(3, 'Huawei')
 print(it_companies)
 
 #task 13
-it_companies[1].upper()
+it_companies[1]= it_companies[1].upper()
 print(it_companies)
 
 #task 14
-print(it_companies + ['#'])
+joined_string = '#;  ' .join(it_companies)
+print(joined_string)
 
 #task 15
 print('Facebook' in it_companies)
@@ -72,8 +76,8 @@ print(joined_list)
 
 #task 27
 full_stack = joined_list.copy()
-full_stack.insert(6, 'Python')
-full_stack.insert(7, 'SQL')
+full_stack.insert(5, 'Python')
+full_stack.insert(6, 'SQL')
 print(full_stack)
 
 
@@ -304,8 +308,8 @@ countries = [
 first_country, *middle_country, last_country = countries 
 print(len(countries))
 
-divided_list = countries[0:96]
-print(divided_list)
+mid = len(countries) // 2
+first_half, second_half = countries[:mid], countries[mid:]
 
 
 new_countries = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
