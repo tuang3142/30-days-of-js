@@ -4,7 +4,7 @@
 
 #1. Create an empty dictionary called dog
 #2. Add name, color, breed, legs, age to the dog dictionary
-my_dog = {
+dog = {
     'name':'Bob',
     'breed':'shiba',
     'color':'yellow',
@@ -13,7 +13,7 @@ my_dog = {
 
 }
 
-print(my_dog)
+print(dog)
 
 
 #3. Create a student dictionary and add first_name, last_name, gender, age, marital status, skills, country, city and address as keys for the dictionary
