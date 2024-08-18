@@ -16,4 +16,4 @@ arr = [1, 2, 3, 4, 5]
 # this should be 5 but it prints 6. can you find what is wrong and fix it?
 print(length(arr))
 
-#I think count(line 9) should start from 0, so just replace 1 to 0  
+#I think count(line 9) should start from 0, so just replace 1 to 0, lmao
