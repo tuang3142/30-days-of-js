@@ -49,19 +49,19 @@ else:
 
 #Exercise lever 2 
 #1. Write a code which gives grade to students according to theirs scores:
- #80-100, A
+ #90-100, A
  #70-89, B
  #60-69, C
  #50-59, D
  #0-49, F
 grade = int(input('Student\'s grade:'))
-if grade >= 80 and grade <= 100:
+if 90 <= grade <= 100:
     print('A')
-elif grade >= 70 and grade <= 89:
+elif 70 <= grade <= 89:
     print('B')
-elif grade >= 60 and grade <= 69:
+elif 60 <= grade <= 69:
     print('C')
-elif grade >= 50 and grade <= 59:
+elif 50 <= grade <= 59:
     print('D')
 else:
     print('F')
@@ -75,7 +75,7 @@ elif month in ['December', 'January', 'February']:
     print("The season is Winter.")
 elif month in ['March', 'April', 'May']:
     print("The season is Spring.")
-elif month in ['June', 'July', 'August']:
+else:
     print("The season is Summer.")
 
 
@@ -97,7 +97,7 @@ person = {
     'last_name': 'Yetayeh',
     'age': 250,
     'country': 'Finland',
-    'is_marred': True,
+    'is_married': True,
     'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address': {
         'street': 'Space street',
@@ -119,6 +119,12 @@ if list(skills) == ['JavaScript', 'React']:
 elif list(skills) == ['Node', 'Python', 'MongoDB']:
     print('He is a backend developer')
 
-# #if the person skills has React, Node and MongoDB, Print('He is a fullstack developer'), else print('unknown title') - for more accurate results more conditions can be nested!
-#* If the person is married and if he lives in Finland, print the information in the following format:
+# if the person skills has React, Node and MongoDB, Print('He is a fullstack developer'), else print('unknown title') - for more accurate results more conditions can be nested!
+if ['React', 'Node', 'MongoDB'] in person['skills']:
+    print('He is a fullstack dev')
+else:
+    print('unknown title') 
 
+# If the person is married and if he lives in Finland, print the information in the following format:
+if person['is_married'] == True and person['country'] == 'Finland':
+    print('Asabeneh Yetayeh lives in Finland. He is married.') 
