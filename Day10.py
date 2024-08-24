@@ -1,6 +1,6 @@
 #Day 10 - Loops
 #BONUS : the last exercise in Day 3
-for number in range(1,6):
+for num in range(1,6):
     print(number, number ** 0, number ** 1 ,number ** 2, number ** 3)
 
 #DAY 10 : EXERCISES
